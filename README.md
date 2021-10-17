@@ -5,3 +5,4 @@ Major features:
 + Add hard mode - faster and harder!
 + Add a gameover scene to avoid instant game reloading
 + Bird is now accelarating rather than falling in a constant speed - smoother
++ Fixed an audio issue that flying sound cannot be played until the former one ends
