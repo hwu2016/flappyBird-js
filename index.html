@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+        }
+        #start{
+            display: block;
+            position: absolute;
+            width: 288px;
+            height: 512px;
+            top: 0;
+            left: 0;
+            background-color: rgb(219, 218, 154);
+            border: 3px solid rgb(175, 236, 114);
+        }
+        #start p{
+            position: absolute;
+            top: 200px;
+            left: 60px;
+            font-size: 28px;
+            color: tomato;
+            font-weight: bolder;  
+        }
+
+        #end{
+            display: none;
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            top: 206px;
+            left: 44px;
+            background-color: rgb(219, 218, 154);
+            border: 3px solid rgb(175, 236, 114);
+        }
+        #end p{
+            position: absolute;
+            top: 20px;
+            left: 28px;
+            font-size: 28px;
+            color: tomato;
+            font-weight: bolder;
+        }
+
+        a{
+            font-size: 20px;
+            text-decoration: none;
+            color: darkgreen;
+            font-weight: bolder;
+        }
+        #restart{
+            position: absolute;
+            top: 60px;
+            left: 53px;
+            text-align: center;
+        }
+        #easy{
+            position: absolute;
+            top: 300px;
+            left: 80px;
+        }
+        #hard{
+            position: absolute;
+            top: 300px;
+            left: 150px;
+        }
+        a:hover{
+            color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="288" height="512"></canvas>
+    <div id="start">
+        <p>Flappy Bird</p>
+        <a href="javascript:;" id="easy">Easy</a>   
+        <a href="javascript:;" id="hard">Hard</a>   
+    </div>
+    <div id="end">
+        <p>Game Over</p>
+        <a href="javascript:;" id="restart">Play Again</a>
+    </div>
+    <script src="flappyBird.js"></script>
+</body>
+</html>
